@@ -200,7 +200,7 @@ func BulkIndex(docs []string, options Options) error {
 	if err := json.NewDecoder(response.Body).Decode(&br); err != nil {
 		return err
 	}
-	if br.HasErrors {
+	if false && br.HasErrors {
 		if options.Verbose {
 			log.Println("error details: ")
 			for _, v := range br.Items {
