@@ -33,13 +33,13 @@ see full CPU utilization. After that, more workers won't buy any more speed.
 Installation
 ------------
 
-    $ go get github.com/miku/esbulk/cmd/esbulk
+    $ go get github.com/jrots/esbulk/cmd/esbulk
 
-For `deb` or `rpm` packages, see: https://github.com/miku/esbulk/releases
+For `deb` or `rpm` packages, see: https://github.com/jrots/esbulk/releases
 
 [intenthq](https://www.intenthq.com/) made available a Docker image at
 [intenthq/esbulk-docker](https://hub.docker.com/r/intenthq/esbulk-docker/) as
-well (thanks [@albertpastrana](https://github.com/albertpastrana)), [#25](https://github.com/miku/esbulk/issues/25).
+well (thanks [@albertpastrana](https://github.com/albertpastrana)), [#25](https://github.com/jrots/esbulk/issues/25).
 
 Run:
 
@@ -53,7 +53,7 @@ repo, it uses a multi-stage build and a FROM SCRATCH base, which allows for a
 lightweight 7.85MB image.
 
 ```
-$ git clone https://github.com/miku/esbulk.git
+$ git clone https://github.com/jrots/esbulk.git
 $ cd esbulk
 $ make image # use make rmi to cleanup
 $ docker run -it --rm esbulk:0.5.2 -v
@@ -132,7 +132,7 @@ non-default server hostport is via `-server`, e.g.
 
 This way, you can use https as well, which was not
 possible before. Options `-host` and `-port` are
-gone as of [esbulk 0.5.0](https://github.com/miku/esbulk/releases/tag/v0.5.0).
+gone as of [esbulk 0.5.0](https://github.com/jrots/esbulk/releases/tag/v0.5.0).
 
 Reusing IDs
 -----------
@@ -267,4 +267,4 @@ $ csvlook -I measurements.csv
 | 6.2.3 | 0.4.13 |  15000000 | 6000  | 2     | 64          | 128           |  2460 |   6400     | 0    |
 ```
 
-Why not add a [row](https://github.com/miku/esbulk/pulls)?
+Why not add a [row](https://github.com/jrots/esbulk/pulls)?

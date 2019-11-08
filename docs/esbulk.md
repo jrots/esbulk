@@ -101,7 +101,7 @@ see full CPU utilization. After that, more workers won't buy any more speed.
 BUGS
 ----
 
-Please report bugs to https://github.com/miku/esbulk/issues.
+Please report bugs to https://github.com/jrots/esbulk/issues.
 
 AUTHORS
 ------

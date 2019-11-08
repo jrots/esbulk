@@ -16,7 +16,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/miku/esbulk"
+	"github.com/jrots/esbulk"
 	"github.com/sethgrid/pester"
 )
 

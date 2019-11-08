@@ -7,7 +7,7 @@ BuildArch:  x86_64
 BuildRoot:  %{_tmppath}/%{name}-build
 Group:      System/Base
 Vendor:     UB Leipzig
-URL:        https://github.com/miku/esbulk
+URL:        https://github.com/jrots/esbulk
 
 %description
 
@@ -59,7 +59,7 @@ rm -rf %{_topdir}/BUILD/%{name}
 
 * Sat Nov 26 2016 Martin Czygan
 - 0.4.0 release
-- attempted fix for https://github.com/miku/esbulk/issues/5
+- attempted fix for https://github.com/jrots/esbulk/issues/5
 
 * Thu Nov 10 2015 Martin Czygan
 - 0.3.5 release
