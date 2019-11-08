@@ -95,7 +95,7 @@ func BulkIndex(docs []string, options Options) error {
 			continue
 		}
 
-		header := fmt.Sprintf(`{"index": {"_index": "%s", "_type": "%s"}}`, options.Index, options.DocType)
+		header := fmt.Sprintf(`{"update": {"_index": "%s", "_type": "%s"}}`, options.Index, options.DocType)
 
 		// If an "-id" is given, peek into the document to extract the ID and
 		// use it in the header.
@@ -141,7 +141,7 @@ func BulkIndex(docs []string, options Options) error {
 				}
 			}
 
-			header = fmt.Sprintf(`{"index": {"_index": "%s", "_type": "%s", "_id": %q}}`,
+			header = fmt.Sprintf(`{"update": {"_index": "%s", "_type": "%s", "_id": %q}}`,
 				options.Index, options.DocType, idstr)
 
 			// Remove the IDField if it is accidentally named '_id', since
